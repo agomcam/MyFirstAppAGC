@@ -107,6 +107,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Back to home" />
+            android:text="Volver al inicio" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

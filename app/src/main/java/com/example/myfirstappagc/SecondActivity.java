@@ -2,6 +2,7 @@ package com.example.myfirstappagc;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -65,6 +66,7 @@ public class SecondActivity extends AppCompatActivity {
                     toast.show();
                     return;
                 }
+                Log.i("swich panel","swich Activity 3");
                 startActivity(intentActivity);
             }
         });
@@ -74,6 +76,7 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intentBack = new Intent(SecondActivity.this, MainActivity.class);
+                Log.i("swich panel","swich Activity 1");
                 startActivity(intentBack);
             }
         });
