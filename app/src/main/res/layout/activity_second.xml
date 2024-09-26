@@ -96,6 +96,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Send data" />
+            android:text="Send data"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Back"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
