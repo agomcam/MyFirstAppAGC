@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Switch;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,6 +44,27 @@ public class SecondActivity extends AppCompatActivity {
                 intentActivity.putExtra("etNumber", editNumber.getText().toString());
                 intentActivity.putExtra("etNumberDecimal", editNumberDecimal.getText().toString());
                 intentActivity.putExtra("swich1", aSwitch.isChecked());
+
+                // Haacemos las comprobaciones para que no enviemos datos sin estar relleno
+
+                if (editText.getText().toString().equalsIgnoreCase("")){
+                    Toast toast = new Toast(SecondActivity.this);
+                    toast.setText("El texto tine que tener contenido");
+                    toast.show();
+                    return;
+                }
+                if (editNumber.getText().toString().equalsIgnoreCase("")){
+                    Toast toast = new Toast(SecondActivity.this);
+                    toast.setText("Necesitas poner un número");
+                    toast.show();
+                    return;
+                }
+                if (editNumberDecimal.getText().toString().equalsIgnoreCase("")){
+                    Toast toast = new Toast(SecondActivity.this);
+                    toast.setText("Necesitas poner un número en decimal");
+                    toast.show();
+                    return;
+                }
                 startActivity(intentActivity);
             }
         });
@@ -52,6 +74,7 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intentBack = new Intent(SecondActivity.this, MainActivity.class);
+                startActivity(intentBack);
             }
         });
 

@@ -2,7 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.MyFirstAppAGC" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/azulClaro</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
     <style name="Theme.MyFirstAppAGC" parent="Base.Theme.MyFirstAppAGC" />
